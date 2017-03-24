@@ -45,7 +45,7 @@ class DoctoresTableViewController: UITableViewController {
         recipes.append(recipe)
         
         recipe = Recipe(name:"Dr. Jeff Raúl Cortés Gonzáles",
-                        phone:"52(222)2130165",
+                        phone:"15595538",
                         image:#imageLiteral(resourceName: "Drjeff-raul-cortes-gonzalez"),
                         address:"Hospital Ángeles Pedregal. Camino a Sta. Teresa No. 1055. Jardines del Pedregal. D.F.. 10700 Magdalena Contreras",
                         review:"El Dr. Jeff Cortés es un destacado Urólogo con más de 10 años de experiencia. Egresó como Médico Cirujano de la Universidad Popular Autónoma del Estado del Puebla, posteriormente se especializo en Urología dentro de la Universidad Nacional Autónoma de México.")
