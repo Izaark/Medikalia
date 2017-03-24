@@ -1,5 +1,5 @@
 //
-//  Recipe.swift
+//  Recipe3.swift
 //  Producto
 //
 //  Created by Isaac López on 24/03/17.
@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class Recipe : NSObject{
+class Recipe3 : NSObject{
+    
     var name : String!
     var phone : String!
     var image : UIImage!
@@ -24,6 +25,5 @@ class Recipe : NSObject{
         self.review = review
         
     }
-
+    
 }
-

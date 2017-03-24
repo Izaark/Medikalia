@@ -93,7 +93,7 @@ extension DetailViewController : UITableViewDelegate {
         switch indexPath.row {
         case 2:
             
-        let alertController = UIAlertController(title: "contactar con el Dr. \(self.recipe.name!)", message: " Quires llamar a este número ?\(self.recipe.phone!)", preferredStyle: .actionSheet)
+        let alertController = UIAlertController(title: "Contactar al Dr. \(self.recipe.name!)", message: " Quieres llamar a este número ?\(self.recipe.phone!)", preferredStyle: .actionSheet)
             
         let callAction = UIAlertAction(title: "Llamar", style: .default, handler: { (action) in
             if let phoneURL = URL(string:"tel://\(self.recipe.phone!)"){
@@ -106,7 +106,9 @@ extension DetailViewController : UITableViewDelegate {
             }
         })
             alertController.addAction(callAction)
-            
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+                alertController.addAction(cancelAction)
             
             self.present(alertController, animated: true,completion: nil)
         default:
