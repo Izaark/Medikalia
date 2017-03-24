@@ -22,6 +22,7 @@
 		6A2578071E84F60700CBA726 /* DoctoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2578061E84F60700CBA726 /* DoctoresTableViewController.swift */; };
 		6A2578091E84FC1000CBA726 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2578081E84FC1000CBA726 /* Recipe.swift */; };
 		6A25780B1E850BC500CBA726 /* ReciveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25780A1E850BC500CBA726 /* ReciveTableViewCell.swift */; };
+		6A25780D1E852B0E00CBA726 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25780C1E852B0E00CBA726 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		6A2578061E84F60700CBA726 /* DoctoresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctoresTableViewController.swift; sourceTree = "<group>"; };
 		6A2578081E84FC1000CBA726 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		6A25780A1E850BC500CBA726 /* ReciveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciveTableViewCell.swift; sourceTree = "<group>"; };
+		6A25780C1E852B0E00CBA726 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				6307E8EC1E84AC5D00717BA9 /* ViewDoctores.swift */,
 				6A2578061E84F60700CBA726 /* DoctoresTableViewController.swift */,
 				6A25780A1E850BC500CBA726 /* ReciveTableViewCell.swift */,
+				6A25780C1E852B0E00CBA726 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A25780D1E852B0E00CBA726 /* DetailViewController.swift in Sources */,
 				6307E8ED1E84AC5D00717BA9 /* ViewDoctores.swift in Sources */,
 				636753A71E82171C00DBC713 /* CustomTextField.swift in Sources */,
 				6A2578071E84F60700CBA726 /* DoctoresTableViewController.swift in Sources */,

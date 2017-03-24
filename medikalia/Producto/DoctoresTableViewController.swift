@@ -90,6 +90,37 @@ class DoctoresTableViewController: UITableViewController {
         return cell
 
     }
+    
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        //Compartir
+        let shareAction = UITableViewRowAction(style: .default, title: "Compartir") { (action, indexPath) in
+            
+            let shareDefaultText = "te recomiendo al doctor \(self.recipes[indexPath.row].name!) por Medikalia echo en dev.f !!!"
+            
+            let activityController = UIActivityViewController(activityItems: [shareDefaultText, self.recipes[indexPath.row].image!], applicationActivities: nil)
+            self.present(activityController, animated: true, completion: nil)
+        }
+        
+        shareAction.backgroundColor = UIColor(red: 30.0/255.0, green: 164.0/255.0, blue: 253.0/255.0, alpha: 1.0)
+        
+        return [shareAction]
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       // let recipe = self.recipes[indexPath.row]
+        
+            }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showRecipe" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let selectedRecipe = self.recipes[indexPath.row]
+                let destinationViewController = segue.destination as! DetailViewController
+                destinationViewController.recipe = selectedRecipe
+            }
+        }
+    }
 
    
 }
