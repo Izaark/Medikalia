@@ -10,14 +10,49 @@ import UIKit
 
 class DoctoresTableViewController: UITableViewController {
 
+     var recipes : [Recipe] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        var recipe = Recipe(name: "Dr Alberto Maya Epelstein",
+                            phone: "52(222)2130165",
+                            image:#imageLiteral(resourceName: "alberto-maya-epelstein"),
+                            address: "Hospital Ángeles Pedregal. Camino a Sta. Teresa No. 1055. Jardines del Pedregal. D.F.. 10700 Magdalena Contreras",
+                            review: "El Dr. Alberto Maya es un destacado Urólogo con más de 10 años de experiencia, Egresó como Médico Cirujano de la Universidad Popular Autónoma del Estado del Puebla, posteriormente se especializo en Urología dentro de la Universidad Nacional Autónoma de México"
+        )
+        recipes.append(recipe)
+        
+        recipe = Recipe(name:"Dr. José Salvador Aburto Morales",
+                        phone:"52(55)85263483",
+                        image:#imageLiteral(resourceName: "Dr.jose-salvador-aburto-morales"),
+                        address:"Hospital Ángeles Pedregal. Camino a Sta. Teresa No. 1055. Jardines del Pedregal. D.F.. 10700 Magdalena Contreras",
+                        review:"El Dr. José Aburto es un destacado Urólogo con más de 10 años de experiencia Egresó como Médico Cirujano de la Universidad Popular Autónoma del Estado del Puebla, posteriormente se especializo en Urología dentro de la Universidad Nacional Autónoma de México")
+        recipes.append(recipe)
+        
+        recipe = Recipe(name:"Dr. Martín Telch",
+                        phone:"52(55)95463484",
+                        image:#imageLiteral(resourceName: "DRmartin-telich-vidal"),
+                        address:"Hospital Ángeles Pedregal. Camino a Sta. Teresa No. 1055. Jardines del Pedregal. D.F.. 10700 Magdalena Contreras",
+                        review:"El Dr Martín Telch es un destacado Urólogo con más de 10 años de experiencia. Egresó como Médico Cirujano de la Universidad Popular Autónoma del Estado del Puebla, posteriormente se especializo en Urología dentro de la Universidad Nacional Autónoma de México.")
+        recipes.append(recipe)
+        
+        recipe = Recipe(name:"Dr. Albino Contreras Sanchez",
+                        phone:"52(222)2130165",
+                        image:#imageLiteral(resourceName: "Dralbino-contreras-sanchez"),
+                        address:"Hospital Ángeles Pedregal. Camino a Sta. Teresa No. 1055. Jardines del Pedregal. D.F.. 10700 Magdalena Contreras",
+                        review:"El Dr. Albino Contreras es un destacado Urólogo con más de 10 años de experiencia. Egresó como Médico Cirujano de la Universidad Popular Autónoma del Estado del Puebla, posteriormente se especializo en Urología dentro de la Universidad Nacional Autónoma de México.")
+        recipes.append(recipe)
+        
+        recipe = Recipe(name:"Dr. Jeff Raúl Cortés Gonzáles",
+                        phone:"52(222)2130165",
+                        image:#imageLiteral(resourceName: "Drjeff-raul-cortes-gonzalez"),
+                        address:"Hospital Ángeles Pedregal. Camino a Sta. Teresa No. 1055. Jardines del Pedregal. D.F.. 10700 Magdalena Contreras",
+                        review:"El Dr. Jeff Cortés es un destacado Urólogo con más de 10 años de experiencia. Egresó como Médico Cirujano de la Universidad Popular Autónoma del Estado del Puebla, posteriormente se especializo en Urología dentro de la Universidad Nacional Autónoma de México.")
+        recipes.append(recipe)
+        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+   
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,69 +62,34 @@ class DoctoresTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.recipes.count
     }
-
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let recipe = recipes[indexPath.row]
+        let cellID = "RecipeCell"
+        
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ReciveTableViewCell
+        //cell.recipeImageView.image = recipe.image
+        cell.thumimageView.image = recipe.image
+        cell.namelabel.text = recipe.name
+        cell.phonelabel.text = recipe.phone
+        cell.addresslabel.text = recipe.address
+        
         return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
-    */
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
