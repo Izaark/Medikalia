@@ -17,6 +17,8 @@
 		63F15FA31E82002C0070E79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F15FA11E82002C0070E79E /* LaunchScreen.storyboard */; };
 		63F15FAE1E82002C0070E79E /* ProductoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F15FAD1E82002C0070E79E /* ProductoTests.swift */; };
 		63F15FB91E82002C0070E79E /* ProductoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F15FB81E82002C0070E79E /* ProductoUITests.swift */; };
+		6A18A10F1E857E3700E5C23A /* Detail2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A18A10E1E857E3700E5C23A /* Detail2ViewController.swift */; };
+		6A18A1111E85855600E5C23A /* Detail22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A18A1101E85855500E5C23A /* Detail22ViewController.swift */; };
 		6A1F58F01E855F3F00744819 /* NeurologosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F58EF1E855F3F00744819 /* NeurologosTableViewController.swift */; };
 		6A1F58F21E855F7900744819 /* Recipe2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F58F11E855F7900744819 /* Recipe2.swift */; };
 		6A2578071E84F60700CBA726 /* DoctoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2578061E84F60700CBA726 /* DoctoresTableViewController.swift */; };
@@ -62,6 +64,8 @@
 		63F15FB41E82002C0070E79E /* ProductoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F15FB81E82002C0070E79E /* ProductoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoUITests.swift; sourceTree = "<group>"; };
 		63F15FBA1E82002C0070E79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A18A10E1E857E3700E5C23A /* Detail2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail2ViewController.swift; sourceTree = "<group>"; };
+		6A18A1101E85855500E5C23A /* Detail22ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail22ViewController.swift; sourceTree = "<group>"; };
 		6A1F58EF1E855F3F00744819 /* NeurologosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeurologosTableViewController.swift; sourceTree = "<group>"; };
 		6A1F58F11E855F7900744819 /* Recipe2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe2.swift; sourceTree = "<group>"; };
 		6A2578061E84F60700CBA726 /* DoctoresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctoresTableViewController.swift; sourceTree = "<group>"; };
@@ -185,8 +189,10 @@
 				6A1F58EF1E855F3F00744819 /* NeurologosTableViewController.swift */,
 				6AF445F61E856B43008E9516 /* GinecologiaTableViewController.swift */,
 				6A25780A1E850BC500CBA726 /* ReciveTableViewCell.swift */,
-				6A25780C1E852B0E00CBA726 /* DetailViewController.swift */,
 				6A25780E1E8535CB00CBA726 /* RecipeDetailTableViewCell.swift */,
+				6A25780C1E852B0E00CBA726 /* DetailViewController.swift */,
+				6A18A10E1E857E3700E5C23A /* Detail2ViewController.swift */,
+				6A18A1101E85855500E5C23A /* Detail22ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -351,6 +357,8 @@
 				6A2578091E84FC1000CBA726 /* Recipe.swift in Sources */,
 				6A25780B1E850BC500CBA726 /* ReciveTableViewCell.swift in Sources */,
 				6A1F58F21E855F7900744819 /* Recipe2.swift in Sources */,
+				6A18A1111E85855600E5C23A /* Detail22ViewController.swift in Sources */,
+				6A18A10F1E857E3700E5C23A /* Detail2ViewController.swift in Sources */,
 				63F15F9E1E82002C0070E79E /* Producto.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

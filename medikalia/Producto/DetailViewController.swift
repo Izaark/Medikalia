@@ -56,6 +56,7 @@ extension DetailViewController : UITableViewDataSource {
                 case 0:
                     cell.keylabel.text = "Nombre:"
                     cell.valuelabel.text = self.recipe.name
+                  
                 case 1:
                     cell.keylabel.text = "direccion:"
                     cell.valuelabel.text = self.recipe.address
