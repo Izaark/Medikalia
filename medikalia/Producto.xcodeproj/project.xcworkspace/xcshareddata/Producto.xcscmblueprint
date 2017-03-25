@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8D67C0FA88AAFFD1743A65ADC6EE367556304656",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D67C0FA88AAFFD1743A65ADC6EE367556304656" : 9223372036854775807,
+    "D35053BC2459F63B29D9A20A7785122D68B6F27D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CFD3125-5966-4B03-9DBF-A64573412F5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D67C0FA88AAFFD1743A65ADC6EE367556304656" : "Medikalia\/",
+    "D35053BC2459F63B29D9A20A7785122D68B6F27D" : "..\/Producto"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Producto",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "medikalia\/Producto.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Izaark\/Medikalia",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D67C0FA88AAFFD1743A65ADC6EE367556304656"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/richlira\/medikalia.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D35053BC2459F63B29D9A20A7785122D68B6F27D"
+    }
+  ]
+}
